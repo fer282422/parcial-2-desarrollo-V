@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Bases de Datos NoSQL</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- encabezado -->
+        <div class="header">
+            <h1 class="centrar">Tipos de Bases de Datos NoSQL</h1>
+        </div>
+
+        <!-- la barra de navegacion -->
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tipos.html">Tipos de Bases de Datos</a></li>
+                <li><a href="ventajas.html">Ventajas</a></li>
+                <li><a href="casos.html">Casos de Uso</a></li>
+            </ul>
+        </div>
+
+        <!-- contenido de la pagina -->
+        <div class="contenido">
+            <h2 class="centrar">Modelos de Bases de Datos NoSQL</h2>
+            <p>NoSQL proporciona otras opciones para organizar los datos de muchas maneras. Al ofrecer diversas estructuras de datos, NoSQL puede aplicarse al análisis de datos, la gestión de big data, las redes sociales y el desarrollo de aplicaciones móviles.</p>
+            <img src="IMG\tipos de almac.webp" alt="Tipos de Bases de Datos NoSQL">
+            <h3>Almacén de valores clave:</h3>
+            <p>Suele considerarse la forma más sencilla de las bases de datos NoSQL. Este modelo de datos sin esquema se organiza en un diccionario de pares clave-valor, donde cada elemento tiene una clave y un valor. La clave podría ser algo similar a lo que se encuentra en una base de datos SQL, como el ID de un carrito de la compra, mientras que el valor es una matriz de datos, como cada artículo del carrito de la compra de ese usuario. Se utiliza habitualmente para almacenar en caché la información de la sesión del usuario, como en el caso de los carritos de la compra. Sin embargo, no es lo ideal cuando necesitas extraer varios registros a la vez. Redis y Memcached son ejemplos de bases de datos clave-valor de código abierto.</p>
+            <img src="IMG\Almacén de valores clave.png" alt="Tipos de Bases de Datos NoSQL">
+            <h3>Almacén de documentos:</h3>
+            <p> Como sugiere el nombre, las bases de datos de documentos almacenan los datos como documentos. Pueden ser útiles en la gestión de datos semiestructurados y, por lo general, los datos se almacenan en los formatos JSON, XML o BSON. Esto mantiene los datos juntos cuando se utilizan en aplicaciones, lo que reduce la cantidad de traducción necesaria para utilizar los datos. Los desarrolladores también disfrutan de una mayor flexibilidad, ya que no es necesario que los esquemas de datos coincidan entre documentos (por ejemplo, nombre frente a nombre_apellido). Sin embargo, esto puede resultar problemático para transacciones complejas y corromper los datos. Los casos de uso más populares de las bases de datos de documentos son los sistemas de gestión de contenidos y los perfiles de usuario. </p>
+            <img src="IMG\Almacén de documentos.jpg" alt="Tipos de Bases de Datos NoSQL">
+            <h3>Almacén de columna ancha:</h3>
+            <p> Estas bases de datos almacenan información en columnas, lo que permite a los usuarios acceder solo a las columnas que necesitan sin asignar memoria adicional a datos irrelevantes. Esta base de datos intenta resolver las deficiencias de los almacenes de valores clave y de documentos, pero como puede ser un sistema más complejo de gestionar, no se recomienda su uso para equipos y proyectos más nuevos. Apache HBase y Apache Cassandra son ejemplos de bases de datos de código abierto de columnas anchas Apache HBase se basa en el sistema de ficheros distribuido de Hadoop que proporciona una forma de almacenar conjuntos de datos, de uso común en muchas aplicaciones de big data. Apache Cassandra, por otro lado, ha sido diseñado para administrar grandes cantidades de datos en múltiples servidores y clústeres que abarcan múltiples centros de datos. </p>
+            <img src="IMG\Almacén de columna ancha.jpg" alt="Tipos de Bases de Datos NoSQL">
+            <h3>Almacén de gráficos:</h3>
+            <p>Este tipo de base de datos suele alojar datos de un grafo de conocimiento. Los elementos de datos se almacenan como nodos, aristas y propiedades. Cualquier objeto, lugar o persona puede ser un nodo. Una arista define la relación entre los nodos. Por ejemplo, un nodo podría ser un cliente, como IBM, y una agencia, como Ogilvy. Una ventaja sería categorizar la relación como una relación de cliente entre IBM y Ogilvy.</p>
+            <img src="IMG\Almacén de gráficos.avif" alt="Tipos de Bases de Datos NoSQL">
+        </div>
+
+        <!-- los pues de la pagina -->
+        <div class="footer">
+            <p>© 2024 - Proyecto de Bases de Datos NoSQL</p>
+            <p>Creado por: Fernando Delgado</p>
+            <p>Estudiante de Desarrollo de Software, Universidad Tecnológica de Panamá</p>
+        </div>
+    </div>
+</body>
+</html>
